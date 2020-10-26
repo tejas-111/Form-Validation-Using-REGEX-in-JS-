@@ -7,7 +7,7 @@ document.getElementById('phone').addEventListener('blur', validateMobileno);
 
 function validateFName() {
     const fname = document.getElementById('fname');
-    const re = /^([a-zA-Z]{2,10})( )?([a-zA-Z]{2,10})( )?([a-zA-Z]{2,10})$/;
+    const re = /^([a-zA-Z]{2,10})( )?([a-zA-Z]{2,10})( )?([a-zA-Z]{2,10})([ ]+)?$/;
     
     if(!re.test(fname.value)) {
         fname.classList.add('is-invalid');
@@ -21,7 +21,7 @@ function validateFName() {
 }
 function validateMName() {
     const fname = document.getElementById('mname');
-    const re = /^([a-zA-Z]{2,10})$/;
+    const re = /^([a-zA-Z]{2,10})([ ]+)?$/;
     
     if(!re.test(mname.value)) {
         mname.classList.add('is-invalid');
