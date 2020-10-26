@@ -36,7 +36,7 @@ function validateMName() {
 
 function validateSno() {
     const sno = document.getElementById('sno');
-    const re = /^(D020)([0-9]{4})([ ]+)?$/;
+    const re = /^(D020)([0-9]{6})([ ]+)?$/;
 
     if(!re.test(sno.value)) {
         sno.classList.add('is-invalid');
@@ -64,7 +64,7 @@ function validateEmail() {
 }
 function validateMobileno() {
     const mno = document.getElementById('mno');
-    const re = /^(\+)?([ ])?([0-9]{2,4})?([ ])?[6-9]\d{9}([ ]+)?$/;
+    const re = /^(\+)?([ ])?([0-9]{2,4})?([ ])?([6-9]\d{9})([ ]+)?$/;
 
     if(!re.test(mno.value)) {
         mno.classList.add('is-invalid');
