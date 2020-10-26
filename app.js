@@ -50,7 +50,7 @@ function validateSno() {
 }
 function validateEmail() {
     const email = document.getElementById('email');
-    const re = /^([\w\.\-]+)@([a-z0-9\-]+).([a-z]{2,8})(\.[a-z]{2,8})?([ ]+)?$/;
+    const re = /^([\w\.\-]+)@([a-z0-9\-\.]+).([a-z]{2,8})(\.[a-z]{2,8})?([ ]+)?$/;
 
     if(!re.test(email.value)) {
         email.classList.add('is-invalid');
