@@ -36,7 +36,7 @@ function validateMName() {
 
 function validateSno() {
     const sno = document.getElementById('sno');
-    const re = /^(D020)([0-9]{4})$/;
+    const re = /^(D020)([0-9]{4})([ ]+)$/;
 
     if(!re.test(sno.value)) {
         sno.classList.add('is-invalid');
